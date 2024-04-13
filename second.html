@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Page</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      background: linear-gradient(to right, #fa1c9d, #ffd633);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 65px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 65px;
+      margin-top: 20px;
+    }
+
+    .card {
+      border-radius: 0 50px 0 50px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      object-fit: cover;
+      border-radius: 0 50px 0 0;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .order-button {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+      margin-top: 20px;
+    }
+
+    .order-button:hover {
+      background-color: white;
+      color: #fa1c9d;
+      border-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Now</h1>
+  <div class="cards-wrapper">
+    <div class="card">
+      <img src="./img2.jpg" alt="Burger" />
+      <div class="card-content">
+        <h2>BURGER</h2>
+        <p>
+          <small>Lorem Ipsum has been the industry's standard dummy text</small>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img3.jpg" alt="Pizza" />
+      <div class="card-content">
+        <h2>PIZZA</h2>
+        <p>
+          <small>Lorem Ipsum has been the industry's standard dummy text</small>
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img4.jpg" alt="Pasta" />
+      <div class="card-content">
+        <h2>PASTA</h2>
+        <p>
+          <small>Lorem Ipsum has been the industry's standard dummy text</small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="order-button">Order</button>
+</body>
+</html>
